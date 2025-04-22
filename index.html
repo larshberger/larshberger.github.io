@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="no">
+<head>
+  <meta charset="UTF-8" />
+  <title>Historiske Haldenbilder gjettespill</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+  <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+</head>
+<body>
+  <!-- STARTSKJERM -->
+  <div id="start-skjerm">
+    <h1>Historiske Haldenbilder gjettespill</h1>
+    <button id="start-knapp" onclick="startSpill()">Start spill</button>
+  </div>
+
+  <!-- SPILL-OMRÅDE -->
+  <div id="spill-container" style="display: none;">
+    <div class="media-container">
+      <div>
+        <h2>Gjett hvilket år bildet er tatt!</h2>
+        <img id="spill-bilde" src="" alt="Gjett hvilket år bildet er tatt" />
+        <div>
+          <input type="text" id="gjetning" placeholder="Skriv årstall her!" />
+        </div>
+      </div>
+      <div>
+        <h2>Gjett hvor bildet er tatt!</h2>
+        <div id="kart"></div>
+        <p><i>Trykk på kartet hvor du tror bildet er tatt</i><p>
+      </div>
+    </div>
+
+    <button onclick="sjekkGjetning()">Sjekk</button>
+    <button id="neste-knapp" style="display: none;" onclick="nesteBilde()">Neste bilde</button>
+
+    <p id="tilbakemelding"></p>
+    <p id="info"></p>
+    <p id="beskrivelse"></p>
+  
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
