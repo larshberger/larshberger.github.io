@@ -1,9 +1,54 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
 
+/* GLOBAL FONTSTIL */
 body {
+  background-color: #1B2127;
+  color: white;
   font-family: Arial, sans-serif;
+  text-shadow: 1px 1px 2px black; 
+  overflow-x: hidden;
   text-align: center;
-  padding: 20px;
-  background-color: #fff;
+}
+
+/* TOPBAR */
+.topbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 45px;
+  background-color: #1B2127;
+  color: white;
+  display: flex;
+  align-items: center;
+  padding: 0 20px;
+  z-index: 1000;
+}
+
+/* BOTTOMBAR */
+.bottombar {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 45px;
+  background-color: #1B2127;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+  font-size: 0.9rem;
+}
+
+/* CONTENT */
+.content {
+  padding: 60px;     
+  min-height: calc(100vh - 90px); 
 }
 
 h1, h2 {
@@ -59,9 +104,4 @@ button {
   margin-top: 20px;
   white-space: pre-line;
   font-size: 14px;
-}
-
-#beskrivelse a {
-  color: #007bff;
-  text-decoration: underline;
 }

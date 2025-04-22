@@ -2,13 +2,31 @@
 <html lang="no">
 <head>
   <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
   <title>Historiske Haldenbilder gjettespill</title>
+
   <link rel="stylesheet" href="style.css" />
   <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
   <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
 </head>
 <body>
-  <!-- STARTSKJERM -->
+
+  <!-- TOPBAR -->
+  <header class="topbar">
+    <div class="logo">Gjett hvor og når - Halden!</div>
+    <!-- Du kan legge til ikon/meny her senere -->
+  </header>
+
+  <!-- BUNNBAR -->
+  <footer class="bottombar">
+    <p>Laget av <a href="https://www.linkedin.com/in/lars-husby-berger-903685292" target="_blank">Lars Husby Berger</a></p>
+    <p>Alle bilder er hentet fra Halden Arbeiderblad på haldenbilder.no</p>
+  </footer>
+
+  <!-- CONTENT -->
+  <main class="content">
+    <!-- STARTSKJERM -->
   <div id="start-skjerm">
     <h1>Historiske Haldenbilder gjettespill</h1>
     <button id="start-knapp" onclick="startSpill()">Start spill</button>
@@ -39,6 +57,7 @@
     <p id="beskrivelse"></p>
   
   </div>
+  </main>
 
   <script src="script.js"></script>
 </body>
